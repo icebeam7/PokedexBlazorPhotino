@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ApplicationIcon>favicon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Update="wwwroot\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="favicon.ico">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+    <PackageReference Include="MudBlazor" Version="7.8.0" />
+    <PackageReference Include="Photino.Blazor" Version="3.1.9" />
+    <PackageReference Include="Photino.NET" Version="3.1.17" />
+    <PackageReference Include="PokeApiNet" Version="4.0.0" />
+  </ItemGroup>
+
+</Project>
